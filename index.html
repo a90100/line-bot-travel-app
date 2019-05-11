@@ -1,10 +1,45 @@
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIFF Starter</title>
-    <link rel="stylesheet" href="style.css">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<title>LIFF Starter</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 </head>
 
 <body>
-    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-    <script src="liff-starter.js"></script>
+	<div id="app">
+		<div class="addPart">
+			<h1>My Travel Schedule</h1><span class="addBtn">
+				<i class="fas fa-plus-circle"></i>
+			</span>
+		</div>
+		<div class="list">
+			<form id="addForm" class="removeForm">
+				<p>要去哪裡呢?</p>
+				<input type="text" placeholder="請輸入行程名稱" name="title" id="title" />
+				<p>要哪天幾點去呢?</p>
+				<input type="date" name="goTravel" id="goTravel" />
+				<input type="text" id="travelTime" placeholder="輸入幾點幾分">
+				<p>何時回來呢?</p>
+				<input type="date" name="goHome" id="goHome" />
+				<input type="text" id="homeTime" placeholder="輸入幾點幾分">
+				<p>備註</p>
+				<textarea placeholder="想寫啥就寫啥,寫些有啥需要帶如何?" rows="4" name="note" id="note"></textarea>
+				<div class="submit">
+					<input type="submit" name="submit" value="確認新增" id="sureAdd" />
+					<input type="submit" name="submit" value="確認編輯" id="sureEdit" />
+					<input type="submit" value="取消" class="addBtn" />
+				</div>
+			</form>
+			<ul id="addList">
+				
+			</ul>
+		</div>
+	</div>
+	<script src="all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+		integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+	<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+	<script src="liff-starter.js"></script>
 </body>

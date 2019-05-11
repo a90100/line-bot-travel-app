@@ -1,0 +1,197 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start */
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: "Noto Sans TC", "Roboto Slab", sans-serif;
+}
+
+html {
+  font-family: "Noto Sans TC", "Roboto Slab", sans-serif;
+  box-sizing: border-box;
+  background-color: #a8f7ba;
+}
+
+html #app {
+  width: 100%;
+}
+
+html #app .addPart {
+  background-color: #60ea82;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+html #app .addPart h1 {
+  margin: 0px;
+  color: #691075;
+  text-shadow: 1px 1px #60ea82, 3px 3px #d61ba1;
+  font-size: 30px;
+}
+
+html #app .addPart span {
+  color: #691075;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 38px;
+}
+
+html #app .addPart span:active {
+  transform: rotate(360deg);
+}
+
+html #app .list {
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+html #app .list form {
+  width: 100%;
+  height: 550px;
+  border-radius: 5px;
+  border: 5px solid #277237;
+  font-size: 18px;
+  background-color: #eda8f4;
+  outline: none;
+  padding: 10px;
+}
+
+html #app .list form.removeForm {
+  display: none;
+}
+
+html #app .list form p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+html #app .list form input,
+html #app .list form textarea {
+  outline: none;
+  padding: 5px;
+  border: 3px solid #691075;
+  width: 100%;
+  margin-top: 5px;
+}
+
+html #app .list form .submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+html #app .list form .submit input[type="submit"] {
+  width: 48%;
+}
+
+html #app .list form .submit input[type="submit"]:last-of-type {
+  background-color: #691075;
+  color: #fff;
+}
+
+html #app .list ul {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+html #app .list ul li {
+  border-radius: 2px;
+  border: 3px solid #eda8f4;
+  font-size: 18px;
+  background-color: #277237;
+  outline: none;
+  color: #fff;
+  padding: 10px 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+html #app .list ul.removeList {
+  display: none;
+}
+
+html #app .list ul li:hover {
+  background-color: #398c4a;
+}
+
+html #app .list ul li .title {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+html #app .list ul li .title h3 {
+  width: 100%;
+  padding-left: 5px;
+}
+
+html #app .list ul li .title button {
+  font-size: 18px;
+  background-color: #277237;
+  outline: none;
+  color: #fff;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+html #app .list ul li .title button:hover {
+  background-color: #398c4a;
+}
